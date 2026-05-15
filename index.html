@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Joan Andreas — Business Architecture Analyst</title>
+  <meta name="description" content="Business Architecture Analyst at Accenture. Cloud architecture, FinOps, and the engineering foundation to back it up.">
+
+  <meta property="og:title" content="Joan Andreas — Business Architecture Analyst">
+  <meta property="og:description" content="Cloud architecture and FinOps practitioner at Accenture. I automate what wastes time, optimise what costs money, and translate both into language that works for developers and boards alike.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://joan2305.github.io">
+  <meta property="og:image" content="https://joan2305.github.io/og-image.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header" id="header">
+    <div class="logo">
+      <div class="logo-mark"></div>
+      Joan Andreas
+    </div>
+    <nav>
+      <a href="#diagram">System</a>
+      <a href="#bridge">The Bridge</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="sys-status">
+      <div class="status-dot"></div>
+      Available for opportunities
+    </div>
+  </header>
+
+  <!-- ============================ HERO + DIAGRAM ============================ -->
+  <section class="hero" id="diagram">
+    <div class="hero-text">
+      <p class="eyebrow">Business Architecture · Cloud Architecture · FinOps</p>
+      <h1 class="hero-title">
+        Fluent in code.<br>
+        Fluent in <em>consequence.</em>
+      </h1>
+      <p class="hero-desc">
+        Business Architecture Analyst at Accenture, with an engineering
+        foundation built at Blibli.com. I automate what wastes time,
+        optimise what costs money, and translate both into language that
+        works for developers and boards alike.
+      </p>
+      <div class="tag-row">
+        <span class="pill pill-eng">python</span>
+        <span class="pill pill-eng">aws-cdk</span>
+        <span class="pill pill-eng">kafka</span>
+        <span class="pill pill-ba">AWS Solutions Architect</span>
+        <span class="pill pill-ba">FinOps</span>
+        <span class="pill pill-ba">TOGAF</span>
+      </div>
+      <div class="cta-row">
+        <button class="btn-primary" id="exploreBtn">Explore the system →</button>
+        <a href="/cv.pdf" download class="btn-ghost">Download CV</a>
+      </div>
+    </div>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 510 490" xmlns="http://www.w3.org/2000/svg" class="diagram-svg" aria-label="Architecture diagram">
+
+        <!-- Zone backgrounds -->
+        <rect x="2" y="55" width="168" height="380" rx="10" fill="#0F1117" opacity="0.04"/>
+        <rect x="340" y="55" width="168" height="380" rx="10" fill="#3B4E8C" opacity="0.04"/>
+
+        <text x="86" y="77" text-anchor="middle" fill="#C4BDB5" font-family="'Space Mono', monospace" font-size="7.5" letter-spacing="3" opacity="0.6">// ENGINEERING</text>
+        <text x="424" y="77" text-anchor="middle" fill="#9aaae0" font-family="'DM Sans', sans-serif" font-size="7.5" letter-spacing="3" opacity="0.6">ARCHITECTURE</text>
+
+        <!-- Secondary connectors (ring 1 -> ring 2) -->
+        <g class="secondary-lines">
+          <line x1="255" y1="117" x2="146" y2="45"/>
+          <line x1="255" y1="117" x2="360" y2="45"/>
+          <line x1="391" y1="239" x2="472" y2="139"/>
+          <line x1="391" y1="239" x2="472" y2="335"/>
+          <line x1="255" y1="361" x2="146" y2="439"/>
+          <line x1="255" y1="361" x2="360" y2="439"/>
+          <line x1="123" y1="239" x2="54" y2="139"/>
+          <line x1="123" y1="239" x2="54" y2="335"/>
+        </g>
+
+        <!-- Primary animated connectors (center -> ring 1) -->
+        <g class="primary-lines">
+          <line class="flow-line flow-1" x1="255" y1="240" x2="255" y2="118"/>
+          <line class="flow-line flow-2" x1="255" y1="240" x2="385" y2="240"/>
+          <line class="flow-line flow-3" x1="255" y1="240" x2="255" y2="362"/>
+          <line class="flow-line flow-4" x1="255" y1="240" x2="125" y2="240"/>
+        </g>
+
+        <!-- ============ Ring 2 nodes ============ -->
+        <!-- AWS Services (bridge tint, top) -->
+        <g class="node node-aws" data-panel="aws" tabindex="0" role="button" aria-label="AWS Services">
+          <rect x="100" y="26" width="92" height="38" rx="4" fill="#EEF1FC" stroke="#3B4E8C" stroke-width="0.8"/>
+          <text x="146" y="44" text-anchor="middle" fill="#3B4E8C" font-family="'DM Sans', sans-serif" font-size="9" font-weight="500">AWS Services</text>
+          <text x="146" y="56" text-anchor="middle" fill="#6A6560" font-family="'DM Sans', sans-serif" font-size="7">EC2 · Lambda · EKS</text>
+        </g>
+
+        <!-- FinOps (arch zone, top right) -->
+        <g class="node node-arch" data-panel="finops" tabindex="0" role="button" aria-label="FinOps">
+          <rect x="314" y="26" width="92" height="38" rx="4" fill="#FFFFFF" stroke="#E2DDD6" stroke-width="0.5"/>
+          <text x="360" y="44" text-anchor="middle" fill="#1A1916" font-family="'DM Sans', sans-serif" font-size="9" font-weight="500">FinOps</text>
+          <text x="360" y="56" text-anchor="middle" fill="#6A6560" font-family="'DM Sans', sans-serif" font-size="7">Cost optimisation</text>
+        </g>
+
+        <!-- Agile (eng zone, left top) -->
+        <g class="node node-eng" data-panel="agile" tabindex="0" role="button" aria-label="Agile">
+          <rect x="8" y="120" width="92" height="38" rx="4" fill="#F4F1EC" stroke="#D5CFC6" stroke-width="0.5"/>
+          <text x="54" y="138" text-anchor="middle" fill="#1A1916" font-family="'Space Mono', monospace" font-size="9">agile</text>
+          <text x="54" y="150" text-anchor="middle" fill="#6A6560" font-family="'Space Mono', monospace" font-size="7">SAFe · Scrum</text>
+        </g>
+
+        <!-- Stakeholders (arch zone, right top) -->
+        <g class="node node-arch" data-panel="stakeholders" tabindex="0" role="button" aria-label="Stakeholders">
+          <rect x="426" y="120" width="76" height="38" rx="4" fill="#FFFFFF" stroke="#E2DDD6" stroke-width="0.5"/>
+          <text x="464" y="138" text-anchor="middle" fill="#1A1916" font-family="'DM Sans', sans-serif" font-size="9" font-weight="500">Stakeholders</text>
+          <text x="464" y="150" text-anchor="middle" fill="#6A6560" font-family="'DM Sans', sans-serif" font-size="7">C-Suite · Boards</text>
+        </g>
+
+        <!-- Workshops (eng zone, left bottom) -->
+        <g class="node node-eng" data-panel="workshops" tabindex="0" role="button" aria-label="Workshops">
+          <rect x="8" y="316" width="92" height="38" rx="4" fill="#F4F1EC" stroke="#D5CFC6" stroke-width="0.5"/>
+          <text x="54" y="334" text-anchor="middle" fill="#1A1916" font-family="'Space Mono', monospace" font-size="9">workshop</text>
+          <text x="54" y="346" text-anchor="middle" fill="#6A6560" font-family="'Space Mono', monospace" font-size="7">discovery</text>
+        </g>
+
+        <!-- Governance (arch zone, right bottom) -->
+        <g class="node node-arch" data-panel="governance" tabindex="0" role="button" aria-label="Governance">
+          <rect x="426" y="316" width="76" height="38" rx="4" fill="#FFFFFF" stroke="#E2DDD6" stroke-width="0.5"/>
+          <text x="464" y="334" text-anchor="middle" fill="#1A1916" font-family="'DM Sans', sans-serif" font-size="9" font-weight="500">Governance</text>
+          <text x="464" y="346" text-anchor="middle" fill="#6A6560" font-family="'DM Sans', sans-serif" font-size="7">Risk · Security</text>
+        </g>
+
+        <!-- IaC (eng zone, bottom left) -->
+        <g class="node node-eng" data-panel="iac" tabindex="0" role="button" aria-label="Infrastructure as Code">
+          <rect x="100" y="420" width="92" height="38" rx="4" fill="#F4F1EC" stroke="#D5CFC6" stroke-width="0.5"/>
+          <text x="146" y="438" text-anchor="middle" fill="#1A1916" font-family="'Space Mono', monospace" font-size="9">$ IaC</text>
+          <text x="146" y="450" text-anchor="middle" fill="#6A6560" font-family="'Space Mono', monospace" font-size="7">aws-cdk · cfn</text>
+        </g>
+
+        <!-- Migration (arch zone, bottom right) -->
+        <g class="node node-arch" data-panel="migration" tabindex="0" role="button" aria-label="Migration">
+          <rect x="314" y="420" width="92" height="38" rx="4" fill="#FFFFFF" stroke="#E2DDD6" stroke-width="0.5"/>
+          <text x="360" y="438" text-anchor="middle" fill="#1A1916" font-family="'DM Sans', sans-serif" font-size="9" font-weight="500">Migration</text>
+          <text x="360" y="450" text-anchor="middle" fill="#6A6560" font-family="'DM Sans', sans-serif" font-size="7">Lift-shift · Re-arch</text>
+        </g>
+
+        <!-- ============ Ring 1 nodes ============ -->
+        <!-- Cloud Architecture (top) -->
+        <g class="node node-r1" data-panel="cloud" tabindex="0" role="button" aria-label="Cloud Architecture">
+          <rect x="193" y="92" width="124" height="50" rx="5" fill="#FFFFFF" stroke="#E2DDD6" stroke-width="0.5"/>
+          <text x="255" y="115" text-anchor="middle" fill="#1A1916" font-family="'DM Sans', sans-serif" font-size="11" font-weight="500">Cloud Architecture</text>
+          <text x="255" y="130" text-anchor="middle" fill="#6A6560" font-family="'DM Sans', sans-serif" font-size="8">AWS · Multi-cloud</text>
+        </g>
+
+        <!-- Business Strategy (right) -->
+        <g class="node node-r1" data-panel="biz" tabindex="0" role="button" aria-label="Business Strategy">
+          <rect x="329" y="214" width="124" height="50" rx="5" fill="#FFFFFF" stroke="#E2DDD6" stroke-width="0.5"/>
+          <text x="391" y="237" text-anchor="middle" fill="#1A1916" font-family="'DM Sans', sans-serif" font-size="11" font-weight="500">Business Strategy</text>
+          <text x="391" y="252" text-anchor="middle" fill="#6A6560" font-family="'DM Sans', sans-serif" font-size="8">Architecture · Roadmaps</text>
+        </g>
+
+        <!-- Engineering (bottom) -->
+        <g class="node node-r1 node-r1-eng" data-panel="eng" tabindex="0" role="button" aria-label="Engineering">
+          <rect x="193" y="336" width="124" height="50" rx="5" fill="#F4F1EC" stroke="#D5CFC6" stroke-width="0.5"/>
+          <text x="255" y="359" text-anchor="middle" fill="#1A1916" font-family="'Space Mono', monospace" font-size="10">Engineering</text>
+          <text x="255" y="374" text-anchor="middle" fill="#6A6560" font-family="'Space Mono', monospace" font-size="8">python · aws-cdk</text>
+        </g>
+
+        <!-- Delivery (left) -->
+        <g class="node node-r1" data-panel="delivery" tabindex="0" role="button" aria-label="Delivery & Enablement">
+          <rect x="61" y="214" width="124" height="50" rx="5" fill="#FFFFFF" stroke="#E2DDD6" stroke-width="0.5"/>
+          <text x="123" y="237" text-anchor="middle" fill="#1A1916" font-family="'DM Sans', sans-serif" font-size="11" font-weight="500">Delivery &amp; Enablement</text>
+          <text x="123" y="252" text-anchor="middle" fill="#6A6560" font-family="'DM Sans', sans-serif" font-size="8">Agile · Knowledge sharing</text>
+        </g>
+
+        <!-- ============ Center node "The Bridge" ============ -->
+        <g class="node node-center" data-panel="center" tabindex="0" role="button" aria-label="Joan Andreas — The Bridge">
+          <rect x="193" y="214" width="124" height="52" rx="8" fill="none" stroke="#3B4E8C" stroke-width="0.5" opacity="0.4"/>
+          <rect x="195" y="216" width="120" height="48" rx="7" fill="#1A1916" stroke="#3B4E8C" stroke-width="1.2"/>
+          <line x1="255" y1="219" x2="255" y2="261" stroke="#3B4E8C" stroke-width="0.5" opacity="0.4"/>
+          <text x="224" y="231" text-anchor="middle" fill="#8090D0" font-family="'Space Mono', monospace" font-size="7">{ eng }</text>
+          <text x="286" y="231" text-anchor="middle" fill="#6070B0" font-family="'DM Sans', sans-serif" font-size="7">[ ba ]</text>
+          <text x="255" y="252" text-anchor="middle" fill="#F7F5F0" font-family="'Noto Serif JP', serif" font-size="12" font-weight="300">Joan Andreas</text>
+        </g>
+      </svg>
+      <p class="diagram-hint">click any node to explore</p>
+    </div>
+  </section>
+
+  <!-- ============================ BRIDGE ============================ -->
+  <section class="bridge" id="bridge">
+    <div class="bridge-grid">
+      <div class="bridge-col bridge-eng">
+        <p class="bridge-label">// FOUNDATION: engineering</p>
+        <h3 class="bridge-title">The Engineer</h3>
+        <ul class="bridge-list">
+          <li><span class="prefix">$</span> Java · Spring Boot · Microservices</li>
+          <li><span class="prefix">$</span> Python · Kafka · Parallel computing</li>
+          <li><span class="prefix">$</span> JavaScript · SQL · DBMS · Redis</li>
+          <li><span class="prefix">$</span> Git · Docker · Selenium</li>
+          <li><span class="prefix">$</span> ~27,600 lines shipped at Blibli.com</li>
+          <li><span class="prefix">$</span> Finished 10% under estimate, consistently</li>
+        </ul>
+      </div>
+
+      <div class="bridge-col bridge-center">
+        <span class="bridge-badge">AWS Certified</span>
+        <div class="bridge-rule"><span class="rule-dot"></span></div>
+        <div class="bridge-stat">
+          <span class="stat-num">6-fig</span>
+          <span class="stat-lab">first year</span>
+        </div>
+        <div class="bridge-rule"><span class="rule-dot"></span></div>
+        <p class="bridge-name">Joan Andreas</p>
+        <div class="bridge-rule"><span class="rule-dot"></span></div>
+        <span class="bridge-badge bridge-badge-bottom">CS · Binus 3.75 GPA</span>
+      </div>
+
+      <div class="bridge-col bridge-arch">
+        <p class="bridge-label arch-label">PRACTICE: Business Architecture</p>
+        <h3 class="bridge-title">The Architect</h3>
+        <ul class="bridge-list arch-list">
+          <li><span class="prefix">◆</span> Cloud Architecture · FinOps</li>
+          <li><span class="prefix">◆</span> AWS Cost &amp; Usage Reporting</li>
+          <li><span class="prefix">◆</span> Power BI · Apptio · Flexera</li>
+          <li><span class="prefix">◆</span> Stakeholder &amp; MBR management</li>
+          <li><span class="prefix">◆</span> Six-figure annualised savings identified</li>
+          <li><span class="prefix">◆</span> Delivered ETL pipeline ahead of schedule</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ EXPERIENCE ============================ -->
+  <section class="exp-section" id="experience">
+    <p class="section-eyebrow">Experience</p>
+    <h2 class="section-title">The career arc.</h2>
+
+    <div class="career-timeline">
+      <div class="timeline-track">
+
+        <div class="timeline-node">
+          <div class="tl-dot tl-dot-eng"></div>
+          <div class="tl-content">
+            <div class="tl-period">Feb 2023 – Feb 2024</div>
+            <div class="tl-role">Software Engineer Intern</div>
+            <div class="tl-company">Blibli.com · Jakarta</div>
+          </div>
+        </div>
+
+        <div class="timeline-connector"></div>
+
+        <div class="timeline-node tl-gap">
+          <div class="tl-dot tl-dot-gap"></div>
+          <div class="tl-content">
+            <div class="tl-period">Feb – Nov 2024</div>
+            <div class="tl-role">Transition period</div>
+            <div class="tl-company">Sharpening skills</div>
+          </div>
+        </div>
+
+        <div class="timeline-connector"></div>
+
+        <div class="timeline-node">
+          <div class="tl-dot tl-dot-ba"></div>
+          <div class="tl-content">
+            <div class="tl-period">Nov 2024 – Present</div>
+            <div class="tl-role">Business Architecture Analyst</div>
+            <div class="tl-company">Accenture · Jakarta</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="cards" id="exp-cards">
+
+      <div class="card">
+        <div class="card-num">01 · Cloud FinOps</div>
+        <div class="card-title">Billing, savings &amp; governance</div>
+        <div class="card-body">
+          Owned end-to-end cloud financial governance at Accenture —
+          100% billing accuracy, zero disputes across two consecutive
+          performance periods. Identified six-figure annualised savings
+          through Savings Plan optimisation and quarterly rightsizing of
+          AWS instances and storage volumes.
+        </div>
+        <div class="card-metric">100%
+          <div class="card-metric-lbl">billing accuracy, two consecutive periods</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-num">02 · Cloud Architecture</div>
+        <div class="card-title">Replacing legacy with serverless</div>
+        <div class="card-body">
+          Built an AWS Lambda + S3 + SNS solution to replace an EOL tool
+          (CloudHealth), automating daily inventory reporting of EC2
+          instances, EBS volumes, and snapshots. Also delivered an Apptio
+          ETL pipeline from scratch — real-time cost impact tracking,
+          delivered ahead of the agreed timeline.
+        </div>
+        <div class="card-metric">EOL → λ
+          <div class="card-metric-lbl">Lambda · S3 · SNS · zero manual steps</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-num">03 · Analytics &amp; Leadership</div>
+        <div class="card-title">Power BI — two projects, one promotion</div>
+        <div class="card-body">
+          Led two Power BI initiatives: a task visibility dashboard that
+          improved team coordination by 20–30%, and a full migration of
+          the Cloud &amp; Security service performance deck to Power BI —
+          guiding an intern through data logic, reporting structure, and
+          stakeholder expectations to deliver a production-ready solution.
+        </div>
+        <div class="card-metric">20–30%
+          <div class="card-metric-lbl">team coordination improvement</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-num">04 · Automation</div>
+        <div class="card-title">Scripting what should never be manual</div>
+        <div class="card-body">
+          Automated ~50% of manual Excel billing work via VBA macros.
+          Built Python scripts for billing reconciliation, snapshot
+          retrieval, S3 cost &amp; usage reporting, and public IP asset
+          visibility. Implemented Power Automate scheduler to pipe daily
+          asset reports from Outlook to SharePoint automatically.
+        </div>
+        <div class="card-metric">50%
+          <div class="card-metric-lbl">manual billing work eliminated</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-num">05 · Engineering</div>
+        <div class="card-title">Production code at scale</div>
+        <div class="card-body">
+          Computer Science graduate from Bina Nusantara University
+          (GPA 3.75). Contributed ~27,600 lines of code to the CMS
+          migration at Blibli.com — one of Indonesia's largest e-commerce
+          platforms — across backend development and QA, consistently
+          finishing 10% under estimated delivery time.
+        </div>
+        <div class="card-metric">~27.6K
+          <div class="card-metric-lbl">lines merged into production</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================ CONTACT ============================ -->
+  <section class="contact-section" id="contact">
+    <p class="section-eyebrow">Contact</p>
+    <h2 class="section-title">Let's talk.</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-key">Email</span>
+          <a href="mailto:joanandreas875@gmail.com" class="contact-val">joanandreas875@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-key">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/joan-andreas-bb3091208/" target="_blank" rel="noopener" class="contact-val">joan-andreas</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-key">Based in</span>
+          <span class="contact-val">Jakarta, Indonesia</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-key">CV</span>
+          <a href="/cv.pdf" download class="contact-val">Download PDF →</a>
+        </div>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/xrejwvep" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Send message →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer>
+    <span>© 2025 Joan Andreas · Jakarta</span>
+    <span style="font-family:'Noto Serif JP',serif;color:var(--jade)">● Online</span>
+  </footer>
+
+  <!-- ============================ DETAIL PANEL ============================ -->
+  <aside class="detail-panel" id="detailPanel" aria-hidden="true">
+    <button class="panel-close" id="panelClose" aria-label="Close panel">×</button>
+    <div class="panel-inner">
+      <p class="panel-cat" id="panelCat"></p>
+      <h3 class="panel-title" id="panelTitle"></h3>
+      <div class="panel-rule"></div>
+      <p class="panel-body" id="panelBody"></p>
+      <div class="panel-metrics" id="panelMetrics"></div>
+      <div class="panel-tags" id="panelTags"></div>
+    </div>
+  </aside>
+  <div class="panel-backdrop" id="panelBackdrop"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
